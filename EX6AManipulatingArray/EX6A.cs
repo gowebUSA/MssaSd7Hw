@@ -97,7 +97,6 @@ namespace EX6AManipulatingArray
 
 
             //----------------------------//RotatingArray()-----------------------------------------------------------------
-            //www.geeksforgeeks.org/array-rotation/
             //Driver code
             Console.WriteLine("\nRotating Array A");
             int[] arr3 = { 0, 2, 4, 6, 8, 10 };  //{ 1, 2, 3, 4, 5, 6, 7 }
