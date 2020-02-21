@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab_Module_1_Framework
 {
-    class Program
+    class LabMod1Fw
     {
         static void Main(string[] args)
         {

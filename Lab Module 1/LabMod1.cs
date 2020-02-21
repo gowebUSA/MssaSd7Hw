@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace MssaSd7Hw
+namespace Lab_Module_1
 {
-    class Program
+    class LabMod1
     {
         static void Main(string[] args)
         {
