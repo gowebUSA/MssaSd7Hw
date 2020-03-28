@@ -15,6 +15,7 @@ namespace MvcMovieSD7
 {
     public class Startup
     {
+        //Ref for this EX 1C: docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/?view=aspnetcore-3.1
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -54,7 +55,7 @@ namespace MvcMovieSD7
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");             //routing on Contorllers, Actions, and Views
             });
         }
     }
