@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Lab_Module_1</RootNamespace>
+    <RootNamespace>Key_ValueStore</RootNamespace>
   </PropertyGroup>
 
 </Project>

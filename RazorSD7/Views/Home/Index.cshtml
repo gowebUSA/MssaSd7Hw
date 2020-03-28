@@ -1,0 +1,61 @@
+﻿@model Product[]
+@{
+    ViewBag.Title = "Richard Go Product Name";
+}
+<table>
+    <thead>
+        <tr><th>Name</th><th>Price</th></tr>
+    </thead>
+    <tbody>
+        @foreach (Product p in Model)
+        {
+            <tr>
+                <td>@p.Name</td>
+                <td>@($"{p.Price:C2}")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@*  @*//commented out on page 125.*
+    <div data-productid="@Model.ProductID" data-stocklevel="@ViewBag.StockLevel">
+        <p>Product Name: @Model.Name</p>
+        <p>Product Price: @($"{Model.Price:C0}")</p>      @*C2 is currency with 2 decimal points.*@  @*<---Do Not Delete the *(at) on the left.*@
+        @*
+            <p>
+                Stock Level:
+                @if (ViewBag.StockLevel == 0)
+                {
+                    @:Out of Stock
+                }
+                else if (ViewBag.StockLevel > 0 && ViewBag.StockLevel <= 3)
+                {
+                    <b>Low Stock (@ViewBag.StockLevel)</b>
+                }
+                else
+                {
+                    @: @ViewBag.StockLevel in Stock
+                }
+
+            </p>
+
+            <p>
+                Stock Level 1: @switch (ViewBag.StockLevel)
+                {
+                    case 0:
+                        @:Out of Stock
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        <b>Low Stock (@ViewBag.StockLevel)</b> @*At HomeController*@  @*<---Do Not Delete the *(at) on the left.*@ @*
+                                            break;
+                                        default:
+                                            @: @ViewBag.StockLevel in Stock
+                                            break;
+                                    }
+                                </p>
+                            </div>
+                        *@
+
+

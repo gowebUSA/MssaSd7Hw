@@ -112,6 +112,7 @@ namespace EX6AManipulatingArray
 
             //----------------------------//SortingArray()-----------------------------------------------------------------
             // array elements 
+            Console.WriteLine("\nSorting Array");
             string[] arr4 = new string[5] { "1", "3", "9", "5", "7" };    //{ "A", "D", "X", "G", "M" }
 
             foreach (string g in arr4)

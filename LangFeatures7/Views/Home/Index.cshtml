@@ -1,0 +1,23 @@
+﻿@model IEnumerable<string>
+
+@{ 
+    Layout = null;
+}
+
+<!DOCTYPE>
+<html>
+<head>
+    <meta name="viewport" content="width-device-width" />
+    <title>Richard Go | ASP.NET Ch 4 Lang Feat</title>
+</head>
+<body>
+    <ul>
+        @foreach (string s in Model)
+        {
+            <li>@s</li>
+        }
+    </ul>
+
+
+</body>
+</html>
