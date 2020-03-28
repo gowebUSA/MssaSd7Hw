@@ -26,7 +26,7 @@ namespace MvcMovieSD7.Controllers
         //}
         public IActionResult Welcome(string name, int numTimes = 1)
         {
-            ViewData["Message"] = "Hello " + name;
+            ViewData["Message"] = "This will be the About Section... " + name;
             ViewData["NumTimes"] = numTimes;
 
             return View();
