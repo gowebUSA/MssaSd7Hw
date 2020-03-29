@@ -8,6 +8,7 @@ namespace MssaSd7Hw
         {
             Console.WriteLine("MssaSd7Hw");
             //1st Term C#:-------------------------------------------------------------------------------------------
+            //200204. Tuition has the compound interest formula. ****************************************************
             //200206.Animal Sound, Overloading, Removed and trasnfered to MssaHwSd7 on 200327.
             //EX 4D Review Loops, Methods, and Decision Statementds.
             //EX 6A Manipulating Array
@@ -26,8 +27,9 @@ namespace MssaSd7Hw
             //MvcMovieSD7. EX 10C ASP.NET
             //////docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-3.1&tabs=visual-studio
             //200328. Transfers WorkingWithVS7 + .Tests from Whiteboard7 Solution.
-            //
-            //
+            //200328. Transfers ContosoSite7 + ContosoUniversityData7 from Whiteboard7 Solution.
+            //200328. Transfers Tuition from Whiteboard7 Solution.
+            //200328. Transfers SportStoreSD7 + .Tests from Whiteboard7 Solution.
         }
     }
 }
