@@ -20,17 +20,26 @@ namespace SportStoreSD7
     {
         public static void Main(string[] args)      //Page 214.
         {
-            //BuildWebHost(args).Run();                     //#2
-            CreateHostBuilder(args).Build().Run();
+            BuildWebHost(args).Run();                     //#2
+            //CreateHostBuilder(args).Build().Run();          //$3
         }
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>()
-                    .UseDefaultServiceProvider(options => options.ValidateScopes = false)
-                    .Build();
-                });
+        //#2
+        public static IWebHost BuildWebHost(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>()
+                .UseDefaultServiceProvider(options =>
+                    options.ValidateScopes = false)
+                .Build();
+
+        //#3
+        //public static IHostBuilder CreateHostBuilder(string[] args) =>
+        //    Host.CreateDefaultBuilder(args)
+        //        .ConfigureWebHostDefaults(webBuilder =>
+        //        {
+        //            webBuilder.UseStartup<Startup>()
+        //            .UseDefaultServiceProvider(options => options.ValidateScopes = false)
+        //            .Build();
+        //        });
 
         //#2
         //public static IWebHost BuildWebHost(string[] args) =>

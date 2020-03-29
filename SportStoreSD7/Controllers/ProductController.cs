@@ -17,6 +17,7 @@ namespace SportStoreSD7.Controllers
         //    return View();
         //}
         private IProductRepository repository;
+        public int PageSize = 4;
         public ProductController(IProductRepository repo)   //Page 204.
         {
             repository = repo;
