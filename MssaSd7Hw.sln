@@ -11,11 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab Module 1 Framework", "L
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EX6AManipulatingArray", "EX6AManipulatingArray\EX6AManipulatingArray.csproj", "{B84B705D-A7AD-45E5-B23C-0D84A04CE9AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Key-ValueStore", "Key-ValueStore\Key-ValueStore.csproj", "{744C2402-E35D-432F-A54A-B7AC9F2F5027}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Key-ValueStore", "Key-ValueStore\Key-ValueStore.csproj", "{744C2402-E35D-432F-A54A-B7AC9F2F5027}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoWebPagesMovie", "GoWebPagesMovie\GoWebPagesMovie.csproj", "{590BAB47-4FF8-42BB-AE4D-46B079CD756E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoWebPagesMovie", "GoWebPagesMovie\GoWebPagesMovie.csproj", "{590BAB47-4FF8-42BB-AE4D-46B079CD756E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMovieSD7", "MvcMovieSD7\MvcMovieSD7.csproj", "{0A40FF7E-593E-4B49-9DAC-4143F9EA8ACB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcMovieSD7", "MvcMovieSD7\MvcMovieSD7.csproj", "{0A40FF7E-593E-4B49-9DAC-4143F9EA8ACB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalSound", "AnimalSound\AnimalSound.csproj", "{C3DB450D-F912-49A0-9AD8-B72A6EF779A0}"
 EndProject
@@ -34,6 +34,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorSD7", "RazorSD7\RazorSD7.csproj", "{24B3B89C-35F9-493E-AC32-EE34636F2446}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursiveMethods", "RecursiveMethods\RecursiveMethods.csproj", "{3A81A4ED-F56D-4B15-892B-90F0B1D0D33A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithVS7", "WorkingWithVS7\WorkingWithVS7.csproj", "{9C9F4598-CC44-4BC3-971E-C7CA848850FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithVS7.Tests", "WorkingWithVS7.Tests\WorkingWithVS7.Tests.csproj", "{D7AC17EB-2DB6-4165-96C8-16A403F60A19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +109,14 @@ Global
 		{3A81A4ED-F56D-4B15-892B-90F0B1D0D33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A81A4ED-F56D-4B15-892B-90F0B1D0D33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A81A4ED-F56D-4B15-892B-90F0B1D0D33A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C9F4598-CC44-4BC3-971E-C7CA848850FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C9F4598-CC44-4BC3-971E-C7CA848850FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C9F4598-CC44-4BC3-971E-C7CA848850FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C9F4598-CC44-4BC3-971E-C7CA848850FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7AC17EB-2DB6-4165-96C8-16A403F60A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7AC17EB-2DB6-4165-96C8-16A403F60A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7AC17EB-2DB6-4165-96C8-16A403F60A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7AC17EB-2DB6-4165-96C8-16A403F60A19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

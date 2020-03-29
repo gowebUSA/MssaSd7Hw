@@ -25,7 +25,7 @@ namespace MssaSd7Hw
             //////docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-3.1&tabs=visual-studio
             //MvcMovieSD7. EX 10C ASP.NET
             //////docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-3.1&tabs=visual-studio
-            //
+            //200328. Transfers WorkingWithVS7 + .Tests from Whiteboard7 Solution.
             //
             //
         }
