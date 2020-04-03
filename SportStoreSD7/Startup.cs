@@ -57,7 +57,7 @@ namespace SportStoreSD7
             //app.UseDeveloperExceptionPage();
             //app.UseStatusCodePages();
             app.UseStaticFiles();
-            app.UseSession();                     //Page 264.
+            app.UseSession();                                               //Page 264.
             app.UseMvc(routes => 
             {
                 //routes.MapRoute(                                          //Comment out Page 242.
