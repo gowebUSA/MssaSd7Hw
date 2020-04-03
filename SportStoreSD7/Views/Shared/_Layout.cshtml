@@ -2,11 +2,25 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    @*<link rel="stylesheet"
+          href="~/bootstrap/dist/css/*.min.css" />*@
+    <link rel="stylesheet"
+          asp-href-include="~/bootstrap/dist/css/*.css"
+          asp-href-exclude="**/*-reboot*,**/*-grid*" />
     <title>SportStoreSD7</title>
 </head>
 <body>
-    <div>
-        @RenderBody()
+    <div class="navbar navbar-inverse bg-inverse" role="navigation">
+        <a class="navbar-brand" href="#">SPORTS STORE SD7</a>
+    </div>
+    <div class="row m-1 p-1">
+        <div id="categories" class="col-3">
+            <p> Expect More For Less... </p>
+            @await Component.InvokeAsync("NavigationMenu")
+        </div>
+        <div class="col-9">
+            @RenderBody()
+        </div>
     </div>
 </body>
 </html>

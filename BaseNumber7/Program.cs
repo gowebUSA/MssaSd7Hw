@@ -4,6 +4,8 @@ namespace BaseNumber7
 {
     class Program
     {
+        public static object Util { get; private set; }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Base Number Conversion 2nd Term EX 1E");

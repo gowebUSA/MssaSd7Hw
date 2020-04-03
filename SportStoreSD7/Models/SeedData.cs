@@ -14,7 +14,7 @@ namespace SportStoreSD7.Models
         {
             ApplicationDbContext context = app.ApplicationServices
             .GetRequiredService<ApplicationDbContext>();
-            context.Database.Migrate();
+            //context.Database.Migrate();         //This line was throwing an exception that Products was already called. Page 217 still including this line.
             if (!context.Products.Any())
             {
                 context.Products.AddRange(

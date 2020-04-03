@@ -20,17 +20,18 @@ namespace SportStoreSD7
     {
         public static void Main(string[] args)      //Page 214.
         {
-            BuildWebHost(args).Run();                     //#2
-            //CreateHostBuilder(args).Build().Run();          //$3
+            //BuildWebHost(args).Run();                     //#2
+            //CreateHostBuilder(args).Build().Run();          //#3
+            BuildWebHost(args).Run();
         }
-        //#2
+        //#4
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .UseDefaultServiceProvider(options =>
-                    options.ValidateScopes = false)
-                .Build();
-
+            .UseStartup<Startup>()
+            .UseDefaultServiceProvider(options =>
+            options.ValidateScopes = false)
+            .Build();                                      //Page 214. Had to retype and removed }); at the bottom of .Build();
+        
         //#3
         //public static IHostBuilder CreateHostBuilder(string[] args) =>
         //    Host.CreateDefaultBuilder(args)
@@ -38,7 +39,7 @@ namespace SportStoreSD7
         //        {
         //            webBuilder.UseStartup<Startup>()
         //            .UseDefaultServiceProvider(options => options.ValidateScopes = false)
-        //            .Build();
+        //            .Build();                                         //Can't have 2 .Build on line 24. By Dan.
         //        });
 
         //#2
@@ -50,7 +51,7 @@ namespace SportStoreSD7
         //        .Build();
 
 
-        //Host.CreateDefaultBuilder(args)                     //See page 214 for WebHost.
+        //Host.CreateDefaultBuilder(args)                            //See page 214 for WebHost.
         //    .ConfigureWebHostDefaults(webBuilder =>
         //    {
         //        webBuilder.UseStartup<Startup>();

@@ -9,6 +9,7 @@ using SportStoreSD7.Models;
 
 namespace SportStoreSD7.Controllers
 {
+    //This was created by scaffolding. This is just a test data.
     public class ProductsController : Controller
     {
         private readonly ApplicationDbContext _context;
