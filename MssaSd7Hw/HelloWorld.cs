@@ -31,7 +31,7 @@ namespace MssaSd7Hw
             //200328. Transfers Tuition from Whiteboard7 Solution.
             //200328. Transfers SportStoreSD7 + .Tests from Whiteboard7 Solution.
             //200328. BaseNumber. EX 1E C#. BInary Base 2. Has a pdf companion. erau.instructure.com/courses/111202/files/21490497
-
+            //200404. KeyValueEx2A is amodified version of Key-ValueStore7 for EX 2A.
         }
     }
 }
