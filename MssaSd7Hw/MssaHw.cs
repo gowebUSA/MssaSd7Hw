@@ -2,7 +2,7 @@
 
 namespace MssaSd7Hw
 {
-    class HelloWorld
+    class MssaHw
     {
         static void Main(string[] args)
         {
@@ -21,7 +21,7 @@ namespace MssaSd7Hw
             //RecursiveMethods. Fibonacci
             //-------------------------------------------------------------------------------------------------------
             //Start of 2nd Term, Week 10, 421 Developing Cloud App & 421 Azure:--------------------------------------
-            //200326. Key-Value Store. EX 1B C#.
+            //200326. Key-Value Store. EX 1B C#. Used Struct.
             //GoWebPagesMovie. 
             //////docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-3.1&tabs=visual-studio
             //MvcMovieSD7. EX 10C ASP.NET
@@ -31,7 +31,8 @@ namespace MssaSd7Hw
             //200328. Transfers Tuition from Whiteboard7 Solution.
             //200328. Transfers SportStoreSD7 + .Tests from Whiteboard7 Solution.
             //200328. BaseNumber. EX 1E C#. BInary Base 2. Has a pdf companion. erau.instructure.com/courses/111202/files/21490497
-            //200404. KeyValueEx2A is amodified version of Key-ValueStore7 for EX 2A.
+            //200404. KeyValueEx2A is amodified version of Key-ValueStore7 for EX 2A. Works with generic types: List<T>.
+            //200404. VectorDistEx2B. Pythagorean Theorem, Vector Distance.
         }
     }
 }
