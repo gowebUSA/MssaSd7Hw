@@ -1,12 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+//1. Introduction to exercise
 
+//5. Fourth part, 100 points
+//Write a function that takes two three-dimensional points and computes the Euclidean distance between
+//them.Then, write a function that iterates through your collection, compares each point to every other point
+//and reports the closest two points.Your output for the three point vectors might look like gure 2.
 namespace VectorDistEx2B
 {
     class VectorDist
     {
         public double Euclidean()
         {
+            //2. First part, In the first two parts, we will find the two closest two-dimensional vectors, modeled as points in a two-
+            //dimensional space. Write a console application that creates some sort of data structure that contains two
+            //integers, x and y, as random numbers between 1 and 100. Do not use the built-in class Point, rather, build
+            //your own data structure.Please note, we will think of these objects as points, but in reality they are vectors.
+            //Then, create some sort of collection that contains 100 of these points.
+            //3. Second part, 80 points
+            //Write a function that takes two points and computes the Euclidean distance between them.Then, write
+            //a function that iterates through your collection, compares each point to every other point and reports the
+            //closest two points.
+
             //dist = sqrt( ((x1 - x2)*2) + ((y1 - y2)*2) )
             Console.WriteLine("Euclidean Distance");
             double dist, x1, x2, y1, y2, sqr, sqrx, sqry;
@@ -54,6 +69,14 @@ namespace VectorDistEx2B
             //
             //
             //
+
+            //4. Third part, 90 points
+            //In the second two parts, we will find the two closest three-dimensional vectors, modeled as points in a three-
+            //dimensional space.Write a console application that creates some sort of data structure that contains three
+            //integers, x, y, and z, as random numbers between 1 and 1000. Do not use any built-in class but build your
+            //own data structure.Please note, we will think of these objects as points, but in reality they are vectors.
+            //Then, create some sort of collection that contains 1000 of these points..
+
             //Ref: https://www.csharpens.com/c-sharp/c-sharp-program-for-pythagoras-theorem-108/
             Console.WriteLine("VectorDistEx2B");
             double d3, x, y, z, sqd3;
