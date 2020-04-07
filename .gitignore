@@ -4,10 +4,10 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # ignore appsettings configuration files
-*/SportStoreSD7/appsettings.json
-*/SportStoreSD7/appsettings.development.json
-*/SportStoreSD7/appsettings.staging.json
-*/SportStoreSD7/appsettings.production.json
+/SportStoreSD7/appsettings.json
+/SportStoreSD7/appsettings.development.json
+/SportStoreSD7/appsettings.staging.json
+/SportStoreSD7/appsettings.production.json
 
 # User-specific files
 *.rsuser
