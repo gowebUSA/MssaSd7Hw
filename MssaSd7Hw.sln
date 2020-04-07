@@ -53,7 +53,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseNumber7", "BaseNumber7\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyValueEx2A", "KeyValueEx2A\KeyValueEx2A.csproj", "{E58D4AEB-AAE3-4557-800C-0123158E9191}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VectorDistEx2B", "VectorDistEx2B\VectorDistEx2B.csproj", "{0E4ECB70-0C91-4145-BA80-167F1F545800}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VectorDistEx2B", "VectorDistEx2B\VectorDistEx2B.csproj", "{0E4ECB70-0C91-4145-BA80-167F1F545800}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1C1D64A2-EAD8-401A-BD6C-146AFDE64B0E}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
