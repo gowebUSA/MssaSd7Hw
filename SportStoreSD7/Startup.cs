@@ -38,12 +38,12 @@ namespace SportStoreSD7
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            //----------------------------------------------Comment out Page 217---------------------------
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-                app.UseStatusCodePages();
-            }
+            //----------------------------------------------Comment out Page 217---------------------------242********
+            //if (env.IsDevelopment())
+            //{
+            //    app.UseDeveloperExceptionPage();
+            //    app.UseStatusCodePages();
+            //}
             //-------------------------------------------------------------------------------
             //app.UseRouting();
 
@@ -56,6 +56,8 @@ namespace SportStoreSD7
             //});
             //app.UseDeveloperExceptionPage();
             //app.UseStatusCodePages();
+            app.UseDeveloperExceptionPage();
+            app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseSession();                                               //Page 264.
             app.UseMvc(routes => 
@@ -68,22 +70,22 @@ namespace SportStoreSD7
                 //routes.MapRoute(                                          //Comment out Page 242.
                 //    name: "default",
                 //    template: "{controller=Product}/{action=List}/{id?}");
-                routes.MapRoute(                                            //Page 242.
+                routes.MapRoute(
                     name: null,
                     template: "{category}/Page{productPage:int}",
                     defaults: new { controller = "Product", action = "List" }
-                    );
-                routes.MapRoute(                                            //Page 242.
-                     name: null,
-                     template: "Page{productPage:int}",
-                     defaults: new
-                     {
-                         controller = "Product",
-                         action = "List",
-                         productPage = 1
-                     }
-                    );
-                routes.MapRoute(                                            //Page 242.
+                );
+                routes.MapRoute(
+                    name: null,
+                    template: "Page{productPage:int}",
+                    defaults: new
+                    {
+                        controller = "Product",
+                        action = "List",
+                        productPage = 1
+                    }
+                );
+                routes.MapRoute(
                     name: null,
                     template: "{category}",
                     defaults: new
@@ -92,8 +94,8 @@ namespace SportStoreSD7
                         action = "List",
                         productPage = 1
                     }
-                    );
-                routes.MapRoute(                                            //Page 242.
+                );
+                routes.MapRoute(
                     name: null,
                     template: "",
                     defaults: new
@@ -101,7 +103,8 @@ namespace SportStoreSD7
                         controller = "Product",
                         action = "List",
                         productPage = 1
-                    });
+                    }
+                );
                 routes.MapRoute(name: null, template: "{controller}/{action}/{id?}");
             });
             //SeedData.EnsurePopulated(app);
