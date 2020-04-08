@@ -13,51 +13,84 @@ namespace SportStoreSD7.Controllers
     public class CartController : Controller
     {
         private IProductRepository repository;
-        public CartController(IProductRepository repo)
+        private Cart cart;                                      //Page 273
+        public CartController(IProductRepository repo, Cart cartService)        //Page 273
         {
             repository = repo;
+            cart = cartService;
         }
-        public ViewResult Index(string returnUrl)
+        //public CartController(IProductRepository repo)                //Comment out Page 273.
+        //{
+        //    repository = repo;
+        //}
+        public ViewResult Index(string returnUrl)                       //Page 273
         {
             return View(new CartIndexViewModel
             {
-                Cart = GetCart(),
+                Cart = cart,
                 ReturnUrl = returnUrl
             });
         }
-        public RedirectToActionResult AddToCart(int productId, string returnUrl)
+        //public ViewResult Index1(string returnUrl)                      //Added Index() from Page 273.
+        //{
+        //    return View(new CartIndexViewModel
+        //    {
+        //        Cart = GetCart(),
+        //        ReturnUrl = returnUrl
+        //    });
+        //}
+        public RedirectToActionResult AddToCart(int productId, string returnUrl)        //Page 274
         {
             Product product = repository.Products
             .FirstOrDefault(p => p.ProductID == productId);
             if (product != null)
             {
-                Cart cart = GetCart();
                 cart.AddItem(product, 1);
-                SaveCart(cart);
             }
             return RedirectToAction("Index", new { returnUrl });
         }
-        public RedirectToActionResult RemoveFromCart(int productId,
-        string returnUrl)
+        //public RedirectToActionResult AddToCart1(int productId, string returnUrl)        //Added AddToCart() from Page 274
+        //{
+        //    Product product = repository.Products
+        //    .FirstOrDefault(p => p.ProductID == productId);
+        //    if (product != null)
+        //    {
+        //        Cart cart = GetCart();
+        //        cart.AddItem(product, 1);
+        //        SaveCart(cart);
+        //    }
+        //    return RedirectToAction("Index", new { returnUrl });
+
+        public RedirectToActionResult RemoveFromCart(int productId, string returnUrl)       //Page 274.
         {
             Product product = repository.Products
             .FirstOrDefault(p => p.ProductID == productId);
             if (product != null)
             {
-                Cart cart = GetCart();
                 cart.RemoveLine(product);
-                SaveCart(cart);
             }
             return RedirectToAction("Index", new { returnUrl });
         }
-        private Cart GetCart()
-        {
-            Cart cart = HttpContext.Session.GetJson<Cart>("Cart") ?? new Cart();
-            return cart;
-        }
-        private void SaveCart(Cart cart)
-        {
-            HttpContext.Session.SetJson("Cart", cart);
-        }
+        //public RedirectToActionResult RemoveFromCart1(int productId, string returnUrl)      //Added RemoveFromCart() from Page 274
+        //{
+        //    Product product = repository.Products
+        //    .FirstOrDefault(p => p.ProductID == productId);
+        //    if (product != null)
+        //    {
+        //        Cart cart = GetCart();
+        //        cart.RemoveLine(product);
+        //        SaveCart(cart);
+        //    }
+        //    return RedirectToAction("Index", new { returnUrl });
+        //}
+        //private Cart GetCart()                                        //Comment put page 274.
+        //{
+        //    Cart cart = HttpContext.Session.GetJson<Cart>("Cart") ?? new Cart();
+        //    return cart;
+        //}
+        //private void SaveCart(Cart cart)
+        //{
+        //    HttpContext.Session.SetJson("Cart", cart);
+        //}
     }
 }

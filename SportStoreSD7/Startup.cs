@@ -30,6 +30,8 @@ namespace SportStoreSD7
                 ));                                                                 //Page 212. Also see appsettings.json Line 12.
             //services.AddTransient<IProductRepository, FakeProductRepository>(); //Page 203, 212.  //EFProductRepository>(); pg. 213.
             services.AddTransient<IProductRepository, EFProductRepository>();     //Page217
+            services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));                //Page 273.
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();     //Page 273.
             services.AddMvc(options => options.EnableEndpointRouting = false);                          //Page 196. Also by Dan.   //Removed from page 263.
             services.AddMemoryCache();                  //Page 263.
             services.AddSession();                     //Page 263.

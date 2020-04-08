@@ -9,12 +9,13 @@ using Microsoft.EntityFrameworkCore;
 namespace SportStoreSD7.Models
 {
     public static class SeedData
-    {
+    {                                                     //Also see Startup.cs Line 112 for creating service.
         public static void EnsurePopulated(IApplicationBuilder app)
         {
             ApplicationDbContext context = app.ApplicationServices
             .GetRequiredService<ApplicationDbContext>();
-            //context.Database.Migrate();         //This line was throwing an exception that Products was already called. Page 217 still including this line.
+            //context.Database.Migrate();         //This line was throwing an exception that Products was already called. 
+                                                    //Page 217 still including this line.
             if (!context.Products.Any())
             {
                 context.Products.AddRange(
