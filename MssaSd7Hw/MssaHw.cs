@@ -33,6 +33,7 @@ namespace MssaSd7Hw
             //200328. BaseNumber. EX 1E C#. BInary Base 2. Has a pdf companion. erau.instructure.com/courses/111202/files/21490497
             //200404. KeyValueEx2A is amodified version of Key-ValueStore7 for EX 2A. Works with generic types: List<T>.
             //200404. VectorDistEx2B. Pythagorean Theorem, Vector Distance.
+            //200408. SendEmailNotifications.
         }
     }
 }
