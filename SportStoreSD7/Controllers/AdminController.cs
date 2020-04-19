@@ -15,5 +15,8 @@ namespace SportStoreSD7.Controllers
             repository = repo;
         }
         public ViewResult Index() => View(repository.Products);
+        public ViewResult Edit(int productId) =>
+            View(repository.Products
+                .FirstOrDefault(p => p.ProductID == productId));
     }
 }
