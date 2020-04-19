@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SportStoreSD7.Models
 {
-    public class FakeProductRepository : IProductRepository
+    public class FakeProductRepository /* : IProductRepository */
     {
         public IQueryable<Product> Products => new List<Product> {
             new Product { Name = "Richard GO Signatuere Model Football", Price = 25 },
