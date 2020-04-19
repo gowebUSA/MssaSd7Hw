@@ -60,7 +60,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendEmailNotifications", "SendEmailNotifications\SendEmailNotifications.csproj", "{630535E1-902D-4ECF-ADAC-84FC67666C82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SendEmailNotifications", "SendEmailNotifications\SendEmailNotifications.csproj", "{630535E1-902D-4ECF-ADAC-84FC67666C82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTemplate", "WebTemplate\WebTemplate.csproj", "{A34B0677-17E1-4849-B309-51D4A72A015D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginForm", "LoginForm\LoginForm.csproj", "{A1A123D5-4C2E-4D52-A39D-AB4D8E1FEB5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginFormSd7", "LoginFormSd7\LoginFormSd7.csproj", "{D17CC695-4824-4457-A8CF-40463082C63B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathGames", "MathGames\MathGames.csproj", "{B2A443E0-EF81-47D3-8A79-0C4AECE091C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwillioSMS7", "TwillioSMS7\TwillioSMS7.csproj", "{DF996129-BEA9-491B-8108-F3961ED59621}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CeasarCipher7", "CeasarCipher7\CeasarCipher7.csproj", "{00D410B1-0FEC-476B-80ED-0DD2E63485CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -178,6 +190,30 @@ Global
 		{630535E1-902D-4ECF-ADAC-84FC67666C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{630535E1-902D-4ECF-ADAC-84FC67666C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{630535E1-902D-4ECF-ADAC-84FC67666C82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A34B0677-17E1-4849-B309-51D4A72A015D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A34B0677-17E1-4849-B309-51D4A72A015D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A34B0677-17E1-4849-B309-51D4A72A015D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A34B0677-17E1-4849-B309-51D4A72A015D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A123D5-4C2E-4D52-A39D-AB4D8E1FEB5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A123D5-4C2E-4D52-A39D-AB4D8E1FEB5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A123D5-4C2E-4D52-A39D-AB4D8E1FEB5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A123D5-4C2E-4D52-A39D-AB4D8E1FEB5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D17CC695-4824-4457-A8CF-40463082C63B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D17CC695-4824-4457-A8CF-40463082C63B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D17CC695-4824-4457-A8CF-40463082C63B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D17CC695-4824-4457-A8CF-40463082C63B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2A443E0-EF81-47D3-8A79-0C4AECE091C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A443E0-EF81-47D3-8A79-0C4AECE091C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A443E0-EF81-47D3-8A79-0C4AECE091C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A443E0-EF81-47D3-8A79-0C4AECE091C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF996129-BEA9-491B-8108-F3961ED59621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF996129-BEA9-491B-8108-F3961ED59621}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF996129-BEA9-491B-8108-F3961ED59621}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF996129-BEA9-491B-8108-F3961ED59621}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00D410B1-0FEC-476B-80ED-0DD2E63485CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00D410B1-0FEC-476B-80ED-0DD2E63485CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00D410B1-0FEC-476B-80ED-0DD2E63485CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00D410B1-0FEC-476B-80ED-0DD2E63485CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

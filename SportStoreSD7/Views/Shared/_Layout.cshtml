@@ -5,7 +5,7 @@
     <link rel="stylesheet"
           asp-href-include="~/bootstrap/dist/css/*.css"
           asp-href-exclude="**/*-reboot*,**/*-grid*" />
-    <link rel="stylesheet" asp-href-include="~/fontawesome/css/*.css" />
+    <link rel="stylesheet" asp-href-include="~/font-awesome/css/*.css" />
     <title>SportStoreSD7</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
         <div class="row">
             <a class="col navbar-brand" href="#">SPORTS STORE</a>
             <div class="col-4 text-right">
-                Cart Wheel @await Component.InvokeAsync("CartSummary")
+                @await Component.InvokeAsync("CartSummary")
             </div>
         </div>
     </div>

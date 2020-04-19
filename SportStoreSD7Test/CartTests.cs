@@ -62,7 +62,8 @@ namespace SportStoreSD7.Test
             // Act
             target.RemoveLine(p2);
             // Assert
-            Assert.Equal(0, target.Lines.Where(c => c.Product == p2).Count());
+            //Assert.Equal(0, target.Lines.Where(c => c.Product == p2).Count());
+            Assert.Empty(target.Lines.Where(c => c.Product == p2));
             Assert.Equal(2, target.Lines.Count());
         }
         [Fact]
@@ -95,7 +96,8 @@ namespace SportStoreSD7.Test
             // Act - reset the cart
             target.Clear();
             // Assert
-            Assert.Equal(0, target.Lines.Count());
+            //Assert.Equal(0, target.Lines.Count());
+            Assert.Empty(target.Lines);
         }
     }
 }
