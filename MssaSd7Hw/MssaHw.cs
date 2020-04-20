@@ -42,6 +42,14 @@ namespace MssaSd7Hw
             //200414. SendEmailNotifications.
             //200418. EncDecSD7. Encryption and Decryption for EX 4A.
 
+
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //BEFORE COMMITTING TO GITHUB, MAKE SURE TO REMOVE ALL PASSWORD IN APPSETTINGS.JSON FILE ON THE FOLLING PROJECTS:
+            //1. SportStoreSD7
+            //2. Waiting...
+
         }
     }
 }
