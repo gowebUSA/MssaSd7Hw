@@ -37,6 +37,10 @@ namespace MssaSd7Hw
             //200411. LoginForm. EX 3A. But submitted LogiFormSd7 instead. Username and password. WIndows Form App. Ref. https://www.c-sharpcorner.com/article/creating-login-form-with-authentication-for/.
             //200411. LoginFormSd7. Ref: https://dotnetfiddle.net/FsXPff. Submit this one for EX 3A.
             //200411. MathGames. EX 3B.
+            //200413. CeasarCipher7.
+            //200414. TwillioSMS7.
+            //200414. SendEmailNotifications.
+            //200418. EncDecSD7. Encryption and Decryption for EX 4A.
 
         }
     }
