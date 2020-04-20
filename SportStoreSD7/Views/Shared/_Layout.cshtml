@@ -14,7 +14,11 @@
             <a class="col navbar-brand" href="#">SPORTS STORE</a>
             <div class="col-4 text-right">
                 @await Component.InvokeAsync("CartSummary")
+                <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
             </div>
+            @*<div class="col-4 text-right">
+                
+            </div>*@
         </div>
     </div>
     <div class="row m-1 p-1">

@@ -9,5 +9,6 @@ namespace SportStoreSD7.Models
     {
         IQueryable<Product> Products { get; }
         void SaveProduct(Product product);                  //Page 307.
+        Product DeleteProduct(int productID);               //Page 319.    
     }
 }
