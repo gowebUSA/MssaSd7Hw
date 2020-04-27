@@ -41,6 +41,7 @@ namespace MssaSd7Hw
             //200414. TwillioSMS7.
             //200414. SendEmailNotifications.
             //200418. EncDecSD7. Encryption and Decryption for EX 4A.
+            //200426. DelegateSD7. Using delagates and EventHandlers. HW 6A.
 
 
 
