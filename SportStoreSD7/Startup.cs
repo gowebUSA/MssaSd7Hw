@@ -26,7 +26,7 @@ namespace SportStoreSD7
             services.AddDbContext<ApplicationDbContext>(
                 options => options.UseSqlServer(
                 //Configuration["Data:SportStoreSD7Products:ConnectionString"]
-                Configuration["Data:SportStoreSD7Products:ConnectionString4"]       //From Dan VM
+                Configuration["Data:SportStoreSD7Products:ConnectionString5"]       //From Dan VM
                 ));                                                                 //Page 212. Also see appsettings.json Line 12.
             //services.AddTransient<IProductRepository, FakeProductRepository>(); //Page 203, 212.  //EFProductRepository>(); pg. 213.
             services.AddTransient<IProductRepository, EFProductRepository>();     //Page217
