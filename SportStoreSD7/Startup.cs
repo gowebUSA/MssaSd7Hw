@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using SportStoreSD7.Models;                 //Page 203.
 using Microsoft.Extensions.Configuration;  //Page 212.
 using Microsoft.EntityFrameworkCore;        //Page 212.
+using Microsoft.AspNetCore.Identity;
 
 namespace SportStoreSD7
 {
@@ -36,6 +37,12 @@ namespace SportStoreSD7
             services.AddMvc(options => options.EnableEndpointRouting = false);    //Page 196. Also by Dan.   //Removed from page 263.
             services.AddMemoryCache();                  //Page 263.
             services.AddSession();                     //Page 263.
+            services.AddDbContext<AppIdentityDbContext>(options =>
+                options.UseSqlServer(
+                Configuration["Data:SportStoreIdentity:ConnectionString"]));
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppIdentityDbContext>()
+                .AddDefaultTokenProviders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -63,6 +70,7 @@ namespace SportStoreSD7
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseSession();                                               //Page 264.
+            app.UseAuthentication();
             app.UseMvc(routes => 
             {
                 //routes.MapRoute(                                          //Comment out Page 242.
@@ -111,6 +119,7 @@ namespace SportStoreSD7
                 routes.MapRoute(name: null, template: "{controller}/{action}/{id?}");
             });
             //SeedData.EnsurePopulated(app);
+            IdentitySeedData.EnsurePopulated(app);
         }
     }
 }

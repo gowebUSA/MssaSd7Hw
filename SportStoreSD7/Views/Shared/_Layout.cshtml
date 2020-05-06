@@ -11,10 +11,19 @@
 <body>
     <div class="navbar navbar-inverse bg-inverse" role="navigation">
         <div class="row">
-            <a class="col navbar-brand" href="#">SPORTS STORE</a>
+            <a class="col navbar-brand" href="#">SPORTS STORE SD7</a>
             <div class="col-4 text-right">
-                @await Component.InvokeAsync("CartSummary")
-                <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
+                <ul class="navbar-nav flex-grow-1 ml-auto">
+                    <li>
+                        @await Component.InvokeAsync("CartSummary")
+                    </li>
+
+                    <li>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
+                    </li>
+                    
+                </ul>
+                
             </div>
             @*<div class="col-4 text-right">
                 

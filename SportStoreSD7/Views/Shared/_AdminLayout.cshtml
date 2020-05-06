@@ -23,6 +23,7 @@
     <div class="bg-info p-2">
         <h4>@ViewBag.Title</h4>
         <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="List">Home</a>
+        <a class="btn btn-sm btn-primary" asp-action="Logout" asp-controller="Account">Log Out</a>
     </div>
     @if (TempData["message"] != null)
     {
