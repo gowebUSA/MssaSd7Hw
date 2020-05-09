@@ -42,13 +42,14 @@ namespace MssaSd7Hw
             //200414. SendEmailNotifications.
             //200418. EncDecSD7. Encryption and Decryption for EX 4A.
             //200426. DelegateSD7. Using delagates and EventHandlers. HW 6A.
+            //200509. CSVParser. Using CsvHelper by Josh Close.
 
 
 
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             //BEFORE COMMITTING TO GITHUB, MAKE SURE TO REMOVE ALL PASSWORD IN APPSETTINGS.JSON FILE ON THE FOLLING PROJECTS:
-            //1. SportStoreSD7
+            //1. SportStoreSD7 = appsettings and appsettings.production.
             //2. Waiting...
 
         }
